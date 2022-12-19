@@ -25,11 +25,6 @@ public class Account extends Person {
         this.isPaying = isPaying;
     }
 
-    public void pay(Trainer b) {
-        Payment a = new Payment(id);
-        a.addMembership(false, getTrainer(b));
-    }
-
     public void getTrainer(Trainer a) {
         hasTrainer = true;
     }

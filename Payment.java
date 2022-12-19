@@ -25,15 +25,10 @@ public class Payment {
         this.rate = rate;
     }
 
-    public boolean addMembership(boolean isMonthly, Trainer getTrainer) {
-        if (rate != 0 || isMonthly) {
-            return false;
+    public String toString() {
+        if (isMonthly) {
+            return "ID: " + id + "\t" + rate + " per month";
         }
-        rate = 30;
-        isMonthly = true;
-        if (getTrainer != null) {
-            rate += getTrainer.getRate();
-        }
-        return true;
+        return "ID: " + id + "\t" + rate + " once";
     }
 }
