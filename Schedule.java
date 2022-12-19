@@ -13,6 +13,22 @@ public class Schedule{
         this.t = t;
     }
 
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int iD) {
+        ID = iD;
+    }
+
+    public Trainer getT() {
+        return t;
+    }
+
+    public void setT(Trainer t) {
+        this.t = t;
+    }
+
     public ArrayList<String> getDays() {
         return days;
     }
