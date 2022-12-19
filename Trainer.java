@@ -22,5 +22,4 @@ public class Trainer {
     public void setRate(double rate) {
         this.rate = rate;
     }
-    
 }

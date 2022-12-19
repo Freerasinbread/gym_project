@@ -22,8 +22,11 @@ public class Main {
             sc.nextLine();
 
             if (ans == 1) {
+                System.out.println("Name: ");
                 String strName = sc.nextLine();
+                System.out.println("Phone");
                 String strPhone = sc.nextLine();
+                System.out.println("Email");
                 String strEmail = sc.nextLine();
 
                 Person newPerson = new Person(strName, strPhone, strEmail);
@@ -56,7 +59,9 @@ public class Main {
                 }
             }
             if (ans == 4) {
+                System.out.println("Name: ");
                 String strName = sc.nextLine();
+                System.out.println("Rate: ");
                 int intRate = sc.nextInt();
 
                 Trainer newTrainer = new Trainer(strName, intRate);
